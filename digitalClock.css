@@ -1,13 +1,13 @@
 .hero{
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(45deg, #08001f,#30197d);
+    background: linear-gradient(120deg, #6193f7,#bb1386);
     color: #fff;
     position: relative;
 }
 .container{
-    width: 800px;
-    height: 180px;
+    width: 1200px;
+    height: 200px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -38,10 +38,10 @@
     content: '';
     width: 180px;
     height: 180px;
-    background: #419aff;
+    background: #4a9efd;
     border-radius: 50%;
     position: absolute;
-    right: -30px;
+    right: -50px;
     bottom: -50px;
     z-index: -1;
 }
@@ -53,13 +53,13 @@
     position: relative;
 }
 .clock span::after{
-   
-    font-size: 16px;
+   font-size: 16px;
     position: absolute;
     bottom: -5px;
     left: 50%;
     transform: translate(-50%);
 }
+
 #hrs::after{
     content: 'HOURS';
 }
@@ -68,4 +68,27 @@
 }
 #sec::after{
     content: 'SEC';
+}
+
+
+@media(max-width:1400px) {
+    .container{
+        width: 900px;
+        height: 200px;
+    } 
+   
+}
+
+@media(max-width:1100px) {
+   .container{
+       width: 500px;
+       height: 900px;
+   }
+}
+
+@media(max-width:550px) {
+   .container{
+       width: 300px;
+       height: 700px;
+   }
 }
